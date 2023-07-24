@@ -1,0 +1,9 @@
+# EditNftRequestBody
+
+
+## Fields
+
+| Field                                                                                              | Type                                                                                               | Required                                                                                           | Description                                                                                        |
+| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `metadata`                                                                                         | [EditNftRequestBodyMetadata](../../models/operations/editnftrequestbodymetadata.md)                | :heavy_check_mark:                                                                                 | See https://docs.crossmint.com/docs/metadata for more info.                                        |
+| `reuploadLinkedFiles`                                                                              | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | (Optional) Any URLs in the metadata object will be resolved and reuploaded to IPFS [Default: true] |
