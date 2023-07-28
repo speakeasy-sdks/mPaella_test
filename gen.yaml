@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: a994a6728252a95f7a47a8b8789dab90
   docVersion: 1.0.0
-  speakeasyVersion: 1.65.1
-  generationVersion: 2.73.1
+  speakeasyVersion: 1.65.2
+  generationVersion: 2.75.1
 generation:
   comments:
     disableComments: false
@@ -13,7 +13,7 @@ generation:
   singleTagPerOp: false
   tagNamespacingDisabled: false
 typescript:
-  version: 1.1.1
+  version: 1.2.0
   author: maxwell
   maxMethodParams: 0
   packageName: crossmint-main
