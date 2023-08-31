@@ -126,3 +126,4 @@ docs/models/operations/mintstatuslistrequest.md
 docs/models/operations/mintstatuslistresponse.md
 docs/models/shared/errort.md
 docs/models/shared/security.md
+.gitattributes
