@@ -5,9 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose } from "class-transformer";
 
-/**
- * Invalid arguments, please make sure you're following the api specification.
- */
 export class ErrorT extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "error" })

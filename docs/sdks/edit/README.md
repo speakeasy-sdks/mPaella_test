@@ -24,37 +24,22 @@ const sdk = new CrossmintMain({
 sdk.edit.editNft({
   requestBody: {
     metadata: {
-      animationUrl: "nisi",
+      animationUrl: "excepturi",
       attributes: [
         {
-          displayType: EditNftRequestBodyMetadataAttributesDisplayType.Number,
-          traitType: "ab",
-          value: "quis",
-        },
-        {
-          displayType: EditNftRequestBodyMetadataAttributesDisplayType.BoostNumber,
-          traitType: "deserunt",
-          value: "perferendis",
-        },
-        {
           displayType: EditNftRequestBodyMetadataAttributesDisplayType.BoostPercentage,
-          traitType: "repellendus",
-          value: "sapiente",
-        },
-        {
-          displayType: EditNftRequestBodyMetadataAttributesDisplayType.Number,
-          traitType: "odit",
-          value: "at",
+          traitType: "recusandae",
+          value: "temporibus",
         },
       ],
-      description: "at",
-      image: "maiores",
-      name: "Bernadette Schmidt",
+      description: "ab",
+      image: "quis",
+      name: "Iris Aufderhar",
     },
     reuploadLinkedFiles: false,
   },
-  collectionId: "porro",
-  id: "a1ba928f-c816-4742-8b73-9205929396fe",
+  collectionId: "sapiente",
+  id: "c2ddf7cc-78ca-41ba-928f-c816742cb739",
 }).then((res: EditNftResponse) => {
   if (res.statusCode == 200) {
     // handle response

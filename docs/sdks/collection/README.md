@@ -207,17 +207,9 @@ sdk.collection.editRoyaltyInformation({
         address: "0x71C...",
         basisPoints: 100,
       },
-      {
-        address: "0x71C...",
-        basisPoints: 100,
-      },
-      {
-        address: "0x71C...",
-        basisPoints: 100,
-      },
     ],
   },
-  collectionId: "iusto",
+  collectionId: "voluptatum",
 }).then((res: EditRoyaltyInformationResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -256,7 +248,7 @@ const sdk = new CrossmintMain({
 });
 
 sdk.collection.getRoyaltyInformation({
-  collectionId: "excepturi",
+  collectionId: "iusto",
 }).then((res: GetRoyaltyInformationResponse) => {
   if (res.statusCode == 200) {
     // handle response

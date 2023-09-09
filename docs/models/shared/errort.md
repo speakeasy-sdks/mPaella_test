@@ -1,7 +1,5 @@
 # ErrorT
 
-Invalid arguments, please make sure you're following the api specification.
-
 
 ## Fields
 
