@@ -1,4 +1,4 @@
-# mint
+# Mint
 
 ### Available Operations
 
