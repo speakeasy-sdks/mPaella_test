@@ -62,21 +62,21 @@ export class EditNftRequestBodyMetadata extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "description" })
-    description: string;
+    description?: string;
 
     /**
      * Direct link to your NFT image
      */
     @SpeakeasyMetadata()
     @Expose({ name: "image" })
-    image: string;
+    image?: string;
 
     /**
      * The name of your NFT (Max length: 32)
      */
     @SpeakeasyMetadata()
     @Expose({ name: "name" })
-    name: string;
+    name?: string;
 }
 
 export class EditNftRequestBody extends SpeakeasyBase {

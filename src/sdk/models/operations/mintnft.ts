@@ -63,21 +63,21 @@ export class MintNftRequestBodyMetadataMetadataObject extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "description" })
-    description: string;
+    description?: string;
 
     /**
      * Direct link to your NFT image
      */
     @SpeakeasyMetadata()
     @Expose({ name: "image" })
-    image: string;
+    image?: string;
 
     /**
      * The name of your NFT (Max length: 32)
      */
     @SpeakeasyMetadata()
     @Expose({ name: "name" })
-    name: string;
+    name?: string;
 }
 
 export class MintNftRequestBody extends SpeakeasyBase {
@@ -93,7 +93,7 @@ export class MintNftRequestBody extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "recipient" })
-    recipient: string;
+    recipient?: string;
 
     /**
      * (Optional) Any URLs in the metadata object will be resolved and reuploaded to IPFS [Default: true]
