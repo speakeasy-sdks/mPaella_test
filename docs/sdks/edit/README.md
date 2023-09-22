@@ -24,22 +24,22 @@ const sdk = new CrossmintMain({
 sdk.edit.editNft({
   requestBody: {
     metadata: {
-      animationUrl: "excepturi",
+      animationUrl: "nisi",
       attributes: [
         {
-          displayType: EditNftRequestBodyMetadataAttributesDisplayType.BoostPercentage,
-          traitType: "recusandae",
-          value: "temporibus",
+          displayType: EditNftRequestBodyMetadataAttributesDisplayType.Number,
+          traitType: "temporibus",
+          value: "ab",
         },
       ],
-      description: "ab",
-      image: "quis",
-      name: "Iris Aufderhar",
+      description: "quis",
+      image: "veritatis",
+      name: "Christopher Hills",
     },
     reuploadLinkedFiles: false,
   },
-  collectionId: "sapiente",
-  id: "c2ddf7cc-78ca-41ba-928f-c816742cb739",
+  collectionId: "quo",
+  id: "2ddf7cc7-8ca1-4ba9-a8fc-816742cb7392",
 }).then((res: EditNftResponse) => {
   if (res.statusCode == 200) {
     // handle response

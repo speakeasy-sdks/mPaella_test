@@ -28,7 +28,7 @@ const sdk = new CrossmintMain({
 });
 
 sdk.collection.collectionInfo({
-  collectionId: "provident",
+  collectionId: "distinctio",
 }).then((res: CollectionInfoResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -69,10 +69,10 @@ const sdk = new CrossmintMain({
 sdk.collection.createCollection({
   chain: CreateCollectionRequestBodyChain.Solana,
   metadata: {
-    description: "quibusdam",
-    imageUrl: "unde",
-    name: "Johnnie Stamm",
-    symbol: "deserunt",
+    description: "unde",
+    imageUrl: "nulla",
+    name: "Dallas Kassulke",
+    symbol: "suscipit",
   },
   reuploadLinkedFiles: false,
 }).then((res: CreateCollectionResponse) => {
@@ -116,14 +116,14 @@ sdk.collection.createCollectionCustom({
   requestBody: {
     chain: CreateCollectionCustomRequestBodyChain.Polygon,
     metadata: {
-      description: "iure",
-      imageUrl: "magnam",
-      name: "Larry Windler",
-      symbol: "molestiae",
+      description: "magnam",
+      imageUrl: "debitis",
+      name: "Lucia Goldner",
+      symbol: "minus",
     },
     reuploadLinkedFiles: false,
   },
-  collectionId: "minus",
+  collectionId: "placeat",
 }).then((res: CreateCollectionCustomResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -162,7 +162,7 @@ const sdk = new CrossmintMain({
 });
 
 sdk.collection.disableRoyaltyInformation({
-  collectionId: "placeat",
+  collectionId: "voluptatum",
 }).then((res: DisableRoyaltyInformationResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -209,7 +209,7 @@ sdk.collection.editRoyaltyInformation({
       },
     ],
   },
-  collectionId: "voluptatum",
+  collectionId: "iusto",
 }).then((res: EditRoyaltyInformationResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -248,7 +248,7 @@ const sdk = new CrossmintMain({
 });
 
 sdk.collection.getRoyaltyInformation({
-  collectionId: "iusto",
+  collectionId: "excepturi",
 }).then((res: GetRoyaltyInformationResponse) => {
   if (res.statusCode == 200) {
     // handle response

@@ -18,8 +18,6 @@ yarn add https://github.com/speakeasy-sdks/mPaella_test
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 import { CollectionInfoResponse } from "crossmint-main/dist/sdk/models/operations";
@@ -32,7 +30,7 @@ const sdk = new CrossmintMain({
 });
 
 sdk.collection.collectionInfo({
-  collectionId: "corrupti",
+  collectionId: "provident",
 }).then((res: CollectionInfoResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -67,6 +65,32 @@ sdk.collection.collectionInfo({
 * [mintStatus](docs/sdks/mint/README.md#mintstatus) - Mint Status
 * [mintStatusList](docs/sdks/mint/README.md#mintstatuslist) - Mint Status List
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+
+
+<!-- Start Pagination -->
+# Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `next` method that can be called to pull down the next group of results. If the
+return value of `next` is `null`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+<!-- End Pagination -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 

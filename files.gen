@@ -39,10 +39,6 @@ src/sdk/models/shared/error.ts
 src/sdk/models/shared/security.ts
 src/sdk/models/shared/index.ts
 src/sdk/models/errors/index.ts
-docs/sdks/crossmintmain/README.md
-docs/sdks/collection/README.md
-docs/sdks/edit/README.md
-docs/sdks/mint/README.md
 USAGE.md
 docs/models/operations/collectioninforequest.md
 docs/models/operations/collectioninforesponse.md
@@ -126,4 +122,8 @@ docs/models/operations/mintstatuslistrequest.md
 docs/models/operations/mintstatuslistresponse.md
 docs/models/shared/errort.md
 docs/models/shared/security.md
+docs/sdks/crossmintmain/README.md
+docs/sdks/collection/README.md
+docs/sdks/edit/README.md
+docs/sdks/mint/README.md
 .gitattributes

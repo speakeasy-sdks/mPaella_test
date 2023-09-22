@@ -28,22 +28,22 @@ const sdk = new CrossmintMain({
 sdk.mint.mintNft({
   requestBody: {
     metadata: {
-      animationUrl: "perferendis",
+      animationUrl: "ad",
       attributes: [
         {
-          displayType: MintNftRequestBodyMetadataMetadataObjectAttributesDisplayType.BoostNumber,
-          traitType: "natus",
-          value: "sed",
+          displayType: MintNftRequestBodyMetadataMetadataObjectAttributesDisplayType.BoostPercentage,
+          traitType: "sed",
+          value: "iste",
         },
       ],
-      description: "iste",
-      image: "dolor",
-      name: "Lester Welch",
+      description: "dolor",
+      image: "natus",
+      name: "May Turcotte",
     },
-    recipient: "in",
+    recipient: "corporis",
     reuploadLinkedFiles: false,
   },
-  collectionId: "corporis",
+  collectionId: "iste",
 }).then((res: MintNftResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -86,11 +86,23 @@ const sdk = new CrossmintMain({
 
 sdk.mint.mintNftAlpha({
   requestBody: {
-    metadata: "iure",
-    recipient: "saepe",
+    metadata: {
+      animationUrl: "saepe",
+      attributes: [
+        {
+          displayType: MintNftAlphaRequestBodyMetadataMetadataObjectAttributesDisplayType.Number,
+          traitType: "architecto",
+          value: "ipsa",
+        },
+      ],
+      description: "reiciendis",
+      image: "est",
+      name: "Cameron Dach",
+    },
+    recipient: "explicabo",
     reuploadLinkedFiles: false,
   },
-  collectionId: "quidem",
+  collectionId: "nobis",
 }).then((res: MintNftAlphaResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -134,23 +146,23 @@ const sdk = new CrossmintMain({
 sdk.mint.mintNftIdempotentAlpha({
   requestBody: {
     metadata: {
-      animationUrl: "ipsa",
+      animationUrl: "omnis",
       attributes: [
         {
-          displayType: MintNftIdempotentAlphaRequestBodyMetadataMetadataObjectAttributesDisplayType.Number,
-          traitType: "est",
-          value: "mollitia",
+          displayType: MintNftIdempotentAlphaRequestBodyMetadataMetadataObjectAttributesDisplayType.BoostPercentage,
+          traitType: "minima",
+          value: "excepturi",
         },
       ],
-      description: "laborum",
-      image: "dolores",
-      name: "Stacy Champlin",
+      description: "accusantium",
+      image: "iure",
+      name: "Miss Aubrey Williamson",
     },
-    recipient: "omnis",
+    recipient: "culpa",
     reuploadLinkedFiles: false,
   },
-  collectionId: "nemo",
-  nftName: "minima",
+  collectionId: "consequuntur",
+  nftName: "repellat",
 }).then((res: MintNftIdempotentAlphaResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -189,8 +201,8 @@ const sdk = new CrossmintMain({
 });
 
 sdk.mint.mintStatus({
-  collectionId: "excepturi",
-  id: "07aff1a3-a2fa-4946-b739-251aa52c3f5a",
+  collectionId: "mollitia",
+  id: "94677392-51aa-452c-bf5a-d019da1ffe78",
 }).then((res: MintStatusResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -229,9 +241,9 @@ const sdk = new CrossmintMain({
 });
 
 sdk.mint.mintStatusList({
-  collectionId: "possimus",
-  page: 135.71,
-  perPage: 971.01,
+  collectionId: "voluptatibus",
+  page: 557.14,
+  perPage: 6048.46,
 }).then((res: MintStatusListResponse) => {
   if (res.statusCode == 200) {
     // handle response
