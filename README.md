@@ -43,7 +43,7 @@ sdk.collection.collectionInfo({
 ## Available Resources and Operations
 
 
-### [Collection](docs/sdks/collection/README.md)
+### [collection](docs/sdks/collection/README.md)
 
 * [collectionInfo](docs/sdks/collection/README.md#collectioninfo) - Collection information
 * [createCollection](docs/sdks/collection/README.md#createcollection) - Create collection
@@ -53,11 +53,11 @@ sdk.collection.collectionInfo({
 * [getRoyaltyInformation](docs/sdks/collection/README.md#getroyaltyinformation) - Fetch royalty configuration
 * [listCollections](docs/sdks/collection/README.md#listcollections) - List all collections
 
-### [Edit](docs/sdks/edit/README.md)
+### [edit](docs/sdks/edit/README.md)
 
 * [editNft](docs/sdks/edit/README.md#editnft) - Edit NFT
 
-### [Mint](docs/sdks/mint/README.md)
+### [mint](docs/sdks/mint/README.md)
 
 * [mintNft](docs/sdks/mint/README.md#mintnft) - Mint an NFT
 * [mintNftAlpha](docs/sdks/mint/README.md#mintnftalpha) - Mint an NFT - Compressed
