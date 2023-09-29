@@ -29,22 +29,22 @@ const sdk = new CrossmintMain({
 sdk.mint.mintNft({
   requestBody: {
     metadata: {
-      animationUrl: "ad",
+      animationUrl: "Niobium communities Developer",
       attributes: [
         {
           displayType: MintNftRequestBodyMetadataMetadataObjectAttributesDisplayType.BoostPercentage,
-          traitType: "sed",
-          value: "iste",
+          traitType: "Paradigm Knolls navigate",
+          value: "male Adaptive",
         },
       ],
-      description: "dolor",
-      image: "natus",
-      name: "May Turcotte",
+      description: "Versatile systematic flexibility",
+      image: "https://loremflickr.com/640/480",
+      name: "Lake Bedfordshire Man",
     },
-    recipient: "corporis",
+    recipient: "Hybrid",
     reuploadLinkedFiles: false,
   },
-  collectionId: "iste",
+  collectionId: "Handcrafted driver",
 }).then((res: MintNftResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -88,22 +88,22 @@ const sdk = new CrossmintMain({
 sdk.mint.mintNftAlpha({
   requestBody: {
     metadata: {
-      animationUrl: "saepe",
+      animationUrl: "enact Pants compound",
       attributes: [
         {
           displayType: MintNftAlphaRequestBodyMetadataMetadataObjectAttributesDisplayType.Number,
-          traitType: "architecto",
-          value: "ipsa",
+          traitType: "CLI Classical Intersex",
+          value: "Gasoline",
         },
       ],
-      description: "reiciendis",
-      image: "est",
-      name: "Cameron Dach",
+      description: "Multi-layered global strategy",
+      image: "https://loremflickr.com/640/480",
+      name: "Oriental",
     },
-    recipient: "explicabo",
+    recipient: "driver Buckinghamshire mindshare",
     reuploadLinkedFiles: false,
   },
-  collectionId: "nobis",
+  collectionId: "payment Tasty oof",
 }).then((res: MintNftAlphaResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -147,23 +147,23 @@ const sdk = new CrossmintMain({
 sdk.mint.mintNftIdempotentAlpha({
   requestBody: {
     metadata: {
-      animationUrl: "omnis",
+      animationUrl: "Northwest laborum",
       attributes: [
         {
-          displayType: MintNftIdempotentAlphaRequestBodyMetadataMetadataObjectAttributesDisplayType.BoostPercentage,
-          traitType: "minima",
-          value: "excepturi",
+          displayType: MintNftIdempotentAlphaRequestBodyMetadataMetadataObjectAttributesDisplayType.Number,
+          traitType: "Estonia disintermediate",
+          value: "abnormally",
         },
       ],
-      description: "accusantium",
-      image: "iure",
-      name: "Miss Aubrey Williamson",
+      description: "De-engineered systemic methodology",
+      image: "https://loremflickr.com/640/480",
+      name: "green Soap",
     },
-    recipient: "culpa",
+    recipient: "withdrawal maximize",
     reuploadLinkedFiles: false,
   },
-  collectionId: "consequuntur",
-  nftName: "repellat",
+  collectionId: "tender partnerships",
+  nftName: "mobile",
 }).then((res: MintNftIdempotentAlphaResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -202,8 +202,8 @@ const sdk = new CrossmintMain({
 });
 
 sdk.mint.mintStatus({
-  collectionId: "mollitia",
-  id: "94677392-51aa-452c-bf5a-d019da1ffe78",
+  collectionId: "interfaces",
+  id: "<ID>",
 }).then((res: MintStatusResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -242,9 +242,9 @@ const sdk = new CrossmintMain({
 });
 
 sdk.mint.mintStatusList({
-  collectionId: "voluptatibus",
-  page: 557.14,
-  perPage: 6048.46,
+  collectionId: "World Movies Northwest",
+  page: 9598.86,
+  perPage: 2733.12,
 }).then((res: MintStatusListResponse) => {
   if (res.statusCode == 200) {
     // handle response

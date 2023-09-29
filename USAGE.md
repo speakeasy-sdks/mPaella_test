@@ -13,7 +13,7 @@ const sdk = new CrossmintMain({
 });
 
 sdk.collection.collectionInfo({
-  collectionId: "corrupti",
+  collectionId: "Northwest calculate",
 }).then((res: CollectionInfoResponse) => {
   if (res.statusCode == 200) {
     // handle response

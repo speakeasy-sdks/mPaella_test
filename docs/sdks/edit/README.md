@@ -25,22 +25,22 @@ const sdk = new CrossmintMain({
 sdk.edit.editNft({
   requestBody: {
     metadata: {
-      animationUrl: "nisi",
+      animationUrl: "violet bluetooth West",
       attributes: [
         {
-          displayType: EditNftRequestBodyMetadataAttributesDisplayType.Number,
-          traitType: "temporibus",
-          value: "ab",
+          displayType: EditNftRequestBodyMetadataAttributesDisplayType.BoostPercentage,
+          traitType: "male",
+          value: "Madagascar parsing",
         },
       ],
-      description: "quis",
-      image: "veritatis",
-      name: "Christopher Hills",
+      description: "Public-key clear-thinking system engine",
+      image: "https://loremflickr.com/640/480",
+      name: "Triston Berkshire deploy",
     },
     reuploadLinkedFiles: false,
   },
-  collectionId: "quo",
-  id: "2ddf7cc7-8ca1-4ba9-a8fc-816742cb7392",
+  collectionId: "application consequently 24/7",
+  id: "<ID>",
 }).then((res: EditNftResponse) => {
   if (res.statusCode == 200) {
     // handle response

@@ -29,7 +29,7 @@ const sdk = new CrossmintMain({
 });
 
 sdk.collection.collectionInfo({
-  collectionId: "distinctio",
+  collectionId: "Northwest calculate",
 }).then((res: CollectionInfoResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -70,10 +70,10 @@ const sdk = new CrossmintMain({
 sdk.collection.createCollection({
   chain: CreateCollectionRequestBodyChain.Solana,
   metadata: {
-    description: "unde",
-    imageUrl: "nulla",
-    name: "Dallas Kassulke",
-    symbol: "suscipit",
+    description: "Stand-alone background structure",
+    imageUrl: "MTF Rustic",
+    name: "West Investor",
+    symbol: "black South",
   },
   reuploadLinkedFiles: false,
 }).then((res: CreateCollectionResponse) => {
@@ -117,14 +117,14 @@ sdk.collection.createCollectionCustom({
   requestBody: {
     chain: CreateCollectionCustomRequestBodyChain.Polygon,
     metadata: {
-      description: "magnam",
-      imageUrl: "debitis",
-      name: "Lucia Goldner",
-      symbol: "minus",
+      description: "Business-focused asymmetric Graphical User Interface",
+      imageUrl: "Tactics DeKalb synthesizing",
+      name: "turquoise parsing hertz",
+      symbol: "virtual Louisiana",
     },
     reuploadLinkedFiles: false,
   },
-  collectionId: "placeat",
+  collectionId: "API Ameliorated",
 }).then((res: CreateCollectionCustomResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -163,7 +163,7 @@ const sdk = new CrossmintMain({
 });
 
 sdk.collection.disableRoyaltyInformation({
-  collectionId: "voluptatum",
+  collectionId: "parsing Leone",
 }).then((res: DisableRoyaltyInformationResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -210,7 +210,7 @@ sdk.collection.editRoyaltyInformation({
       },
     ],
   },
-  collectionId: "iusto",
+  collectionId: "Cotton logistical transmitter",
 }).then((res: EditRoyaltyInformationResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -249,7 +249,7 @@ const sdk = new CrossmintMain({
 });
 
 sdk.collection.getRoyaltyInformation({
-  collectionId: "excepturi",
+  collectionId: "although",
 }).then((res: GetRoyaltyInformationResponse) => {
   if (res.statusCode == 200) {
     // handle response
