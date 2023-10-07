@@ -13,39 +13,35 @@ Edit a minted NFT's metadata on IPFS. <br> **This API is subject to change as it
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { EditNftRequestBodyMetadataAttributesDisplayType, EditNftResponse } from "crossmint-main/dist/sdk/models/operations";
+import { EditNftRequestBodyMetadataAttributesDisplayType } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
-
-sdk.edit.editNft({
-  requestBody: {
-    metadata: {
-      animationUrl: "violet bluetooth West",
-      attributes: [
-        {
-          displayType: EditNftRequestBodyMetadataAttributesDisplayType.BoostPercentage,
-          traitType: "male",
-          value: "Madagascar parsing",
-        },
-      ],
-      description: "Public-key clear-thinking system engine",
-      image: "https://loremflickr.com/640/480",
-      name: "Triston Berkshire deploy",
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
     },
-    reuploadLinkedFiles: false,
-  },
-  collectionId: "application consequently 24/7",
-  id: "<ID>",
-}).then((res: EditNftResponse) => {
+  });
+
+  const res = await sdk.edit.editNft({
+    requestBody: {
+      metadata: {
+        attributes: [
+          {
+            traitType: "violet bluetooth West",
+            value: "New calculate",
+          },
+        ],
+      },
+    },
+    collectionId: "firewall",
+    id: "<ID>",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

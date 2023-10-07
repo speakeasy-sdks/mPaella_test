@@ -19,22 +19,23 @@ Get information about a specific collection
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { CollectionInfoResponse } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
+    },
+  });
 
-sdk.collection.collectionInfo({
-  collectionId: "Northwest calculate",
-}).then((res: CollectionInfoResponse) => {
+  const res = await sdk.collection.collectionInfo({
+    collectionId: "Northwest calculate",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -58,29 +59,24 @@ Create a collection with a random UUID
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { CreateCollectionRequestBodyChain, CreateCollectionResponse } from "crossmint-main/dist/sdk/models/operations";
+import { CreateCollectionRequestBodyChain } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
+    },
+  });
 
-sdk.collection.createCollection({
-  chain: CreateCollectionRequestBodyChain.Solana,
-  metadata: {
-    description: "Stand-alone background structure",
-    imageUrl: "MTF Rustic",
-    name: "West Investor",
-    symbol: "black South",
-  },
-  reuploadLinkedFiles: false,
-}).then((res: CreateCollectionResponse) => {
+  const res = await sdk.collection.createCollection({
+    metadata: {},
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -104,32 +100,27 @@ Create a collection with a custom provided UUID
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { CreateCollectionCustomRequestBodyChain, CreateCollectionCustomResponse } from "crossmint-main/dist/sdk/models/operations";
+import { CreateCollectionCustomRequestBodyChain } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
-
-sdk.collection.createCollectionCustom({
-  requestBody: {
-    chain: CreateCollectionCustomRequestBodyChain.Polygon,
-    metadata: {
-      description: "Business-focused asymmetric Graphical User Interface",
-      imageUrl: "Tactics DeKalb synthesizing",
-      name: "turquoise parsing hertz",
-      symbol: "virtual Louisiana",
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
     },
-    reuploadLinkedFiles: false,
-  },
-  collectionId: "API Ameliorated",
-}).then((res: CreateCollectionCustomResponse) => {
+  });
+
+  const res = await sdk.collection.createCollectionCustom({
+    requestBody: {
+      metadata: {},
+    },
+    collectionId: "Avon Loan",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -153,22 +144,23 @@ Remove all royalties from a given collection. No new NFT sales will yield royalt
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { DisableRoyaltyInformationResponse } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
+    },
+  });
 
-sdk.collection.disableRoyaltyInformation({
-  collectionId: "parsing Leone",
-}).then((res: DisableRoyaltyInformationResponse) => {
+  const res = await sdk.collection.disableRoyaltyInformation({
+    collectionId: "parsing Leone",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -192,30 +184,31 @@ Configure royalties for all NFTs in a collection.
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { EditRoyaltyInformationResponse } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
+    },
+  });
 
-sdk.collection.editRoyaltyInformation({
-  requestBody: {
-    recipients: [
-      {
-        address: "0x71C...",
-        basisPoints: 100,
-      },
-    ],
-  },
-  collectionId: "Cotton logistical transmitter",
-}).then((res: EditRoyaltyInformationResponse) => {
+  const res = await sdk.collection.editRoyaltyInformation({
+    requestBody: {
+      recipients: [
+        {
+          address: "0x71C...",
+          basisPoints: 100,
+        },
+      ],
+    },
+    collectionId: "Cotton logistical transmitter",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -239,22 +232,23 @@ Fetch the royalty config for a collection, from its current state in the blockch
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { GetRoyaltyInformationResponse } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
+    },
+  });
 
-sdk.collection.getRoyaltyInformation({
-  collectionId: "although",
-}).then((res: GetRoyaltyInformationResponse) => {
+  const res = await sdk.collection.getRoyaltyInformation({
+    collectionId: "although",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -278,20 +272,21 @@ List all of your collections on Crossmint
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { ListCollectionsResponse } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
+    },
+  });
 
-sdk.collection.listCollections().then((res: ListCollectionsResponse) => {
+  const res = await sdk.collection.listCollections();
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters

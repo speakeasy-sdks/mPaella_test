@@ -17,39 +17,26 @@ Mint your NFTs and deliver them either to a web3 wallet or to a web2 email addre
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { MintNftRequestBodyMetadataMetadataObjectAttributesDisplayType, MintNftResponse } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
-
-sdk.mint.mintNft({
-  requestBody: {
-    metadata: {
-      animationUrl: "Niobium communities Developer",
-      attributes: [
-        {
-          displayType: MintNftRequestBodyMetadataMetadataObjectAttributesDisplayType.BoostPercentage,
-          traitType: "Paradigm Knolls navigate",
-          value: "male Adaptive",
-        },
-      ],
-      description: "Versatile systematic flexibility",
-      image: "https://loremflickr.com/640/480",
-      name: "Lake Bedfordshire Man",
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
     },
-    recipient: "Hybrid",
-    reuploadLinkedFiles: false,
-  },
-  collectionId: "Handcrafted driver",
-}).then((res: MintNftResponse) => {
+  });
+
+  const res = await sdk.mint.mintNft({
+    requestBody: {
+      metadata: "Handmade",
+    },
+    collectionId: "Developer",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -73,42 +60,26 @@ This will mint your NFT with compression on Solana.
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import {
-  MintNftAlphaRequestBodyMetadataMetadataObjectAttributesDisplayType,
-  MintNftAlphaResponse,
-} from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
-
-sdk.mint.mintNftAlpha({
-  requestBody: {
-    metadata: {
-      animationUrl: "enact Pants compound",
-      attributes: [
-        {
-          displayType: MintNftAlphaRequestBodyMetadataMetadataObjectAttributesDisplayType.Number,
-          traitType: "CLI Classical Intersex",
-          value: "Gasoline",
-        },
-      ],
-      description: "Multi-layered global strategy",
-      image: "https://loremflickr.com/640/480",
-      name: "Oriental",
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
     },
-    recipient: "driver Buckinghamshire mindshare",
-    reuploadLinkedFiles: false,
-  },
-  collectionId: "payment Tasty oof",
-}).then((res: MintNftAlphaResponse) => {
+  });
+
+  const res = await sdk.mint.mintNftAlpha({
+    requestBody: {
+      metadata: "Account",
+    },
+    collectionId: "Pants",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -132,43 +103,27 @@ This pathway allows you to mint NFTs and  guarantee idempotency
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import {
-  MintNftIdempotentAlphaRequestBodyMetadataMetadataObjectAttributesDisplayType,
-  MintNftIdempotentAlphaResponse,
-} from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
-
-sdk.mint.mintNftIdempotentAlpha({
-  requestBody: {
-    metadata: {
-      animationUrl: "Northwest laborum",
-      attributes: [
-        {
-          displayType: MintNftIdempotentAlphaRequestBodyMetadataMetadataObjectAttributesDisplayType.Number,
-          traitType: "Estonia disintermediate",
-          value: "abnormally",
-        },
-      ],
-      description: "De-engineered systemic methodology",
-      image: "https://loremflickr.com/640/480",
-      name: "green Soap",
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
     },
-    recipient: "withdrawal maximize",
-    reuploadLinkedFiles: false,
-  },
-  collectionId: "tender partnerships",
-  nftName: "mobile",
-}).then((res: MintNftIdempotentAlphaResponse) => {
+  });
+
+  const res = await sdk.mint.mintNftIdempotentAlpha({
+    requestBody: {
+      metadata: "Cotton",
+    },
+    collectionId: "Intranet",
+    nftName: "finesse Estonia disintermediate",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -192,23 +147,24 @@ Get the status and associated information for a mint operation
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { MintStatusResponse } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
+    },
+  });
 
-sdk.mint.mintStatus({
-  collectionId: "interfaces",
-  id: "<ID>",
-}).then((res: MintStatusResponse) => {
+  const res = await sdk.mint.mintStatus({
+    collectionId: "interfaces",
+    id: "<ID>",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -232,24 +188,24 @@ Get a list of status and associated information for all mint operations in a giv
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { MintStatusListResponse } from "crossmint-main/dist/sdk/models/operations";
 
-const sdk = new CrossmintMain({
-  security: {
-    clientSecret: "",
-    projectId: "",
-  },
-});
+(async() => {
+  const sdk = new CrossmintMain({
+    security: {
+      clientSecret: "",
+      projectId: "",
+    },
+  });
 
-sdk.mint.mintStatusList({
-  collectionId: "World Movies Northwest",
-  page: 9598.86,
-  perPage: 2733.12,
-}).then((res: MintStatusListResponse) => {
+  const res = await sdk.mint.mintStatusList({
+    collectionId: "World Movies Northwest",
+    page: 9598.86,
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
