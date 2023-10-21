@@ -28,13 +28,13 @@ import { EditNftRequestBodyMetadataAttributesDisplayType } from "crossmint-main/
       metadata: {
         attributes: [
           {
-            traitType: "violet bluetooth West",
-            value: "New calculate",
+            traitType: "string",
+            value: "string",
           },
         ],
       },
     },
-    collectionId: "firewall",
+    collectionId: "string",
     id: "<ID>",
   });
 

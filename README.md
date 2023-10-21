@@ -21,22 +21,23 @@ yarn add https://github.com/speakeasy-sdks/mPaella_test
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
-  const sdk = new CrossmintMain({
-    security: {
-      clientSecret: "",
-      projectId: "",
-    },
-  });
+(async () => {
+    const sdk = new CrossmintMain({
+        security: {
+            clientSecret: "",
+            projectId: "",
+        },
+    });
 
-  const res = await sdk.collection.collectionInfo({
-    collectionId: "Northwest calculate",
-  });
+    const res = await sdk.collection.collectionInfo({
+        collectionId: "string",
+    });
 
-  if (res.statusCode == 200) {
-    // handle response
-  }
+    if (res.statusCode == 200) {
+        // handle response
+    }
 })();
+
 ```
 <!-- End SDK Example Usage -->
 

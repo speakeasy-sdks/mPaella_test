@@ -28,9 +28,9 @@ import { CrossmintMain } from "crossmint-main";
 
   const res = await sdk.mint.mintNft({
     requestBody: {
-      metadata: "Handmade",
+      metadata: "string",
     },
-    collectionId: "Developer",
+    collectionId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -71,9 +71,9 @@ import { CrossmintMain } from "crossmint-main";
 
   const res = await sdk.mint.mintNftAlpha({
     requestBody: {
-      metadata: "Account",
+      metadata: "string",
     },
-    collectionId: "Pants",
+    collectionId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -114,10 +114,10 @@ import { CrossmintMain } from "crossmint-main";
 
   const res = await sdk.mint.mintNftIdempotentAlpha({
     requestBody: {
-      metadata: "Cotton",
+      metadata: "string",
     },
-    collectionId: "Intranet",
-    nftName: "finesse Estonia disintermediate",
+    collectionId: "string",
+    nftName: "string",
   });
 
   if (res.statusCode == 200) {
@@ -157,7 +157,7 @@ import { CrossmintMain } from "crossmint-main";
   });
 
   const res = await sdk.mint.mintStatus({
-    collectionId: "interfaces",
+    collectionId: "string",
     id: "<ID>",
   });
 
@@ -198,8 +198,8 @@ import { CrossmintMain } from "crossmint-main";
   });
 
   const res = await sdk.mint.mintStatusList({
-    collectionId: "World Movies Northwest",
-    page: 9598.86,
+    collectionId: "string",
+    page: 8263.07,
   });
 
   if (res.statusCode == 200) {

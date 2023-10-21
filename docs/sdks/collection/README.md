@@ -29,7 +29,7 @@ import { CrossmintMain } from "crossmint-main";
   });
 
   const res = await sdk.collection.collectionInfo({
-    collectionId: "Northwest calculate",
+    collectionId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -114,7 +114,7 @@ import { CreateCollectionCustomRequestBodyChain } from "crossmint-main/dist/sdk/
     requestBody: {
       metadata: {},
     },
-    collectionId: "Avon Loan",
+    collectionId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -154,7 +154,7 @@ import { CrossmintMain } from "crossmint-main";
   });
 
   const res = await sdk.collection.disableRoyaltyInformation({
-    collectionId: "parsing Leone",
+    collectionId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -202,7 +202,7 @@ import { CrossmintMain } from "crossmint-main";
         },
       ],
     },
-    collectionId: "Cotton logistical transmitter",
+    collectionId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -242,7 +242,7 @@ import { CrossmintMain } from "crossmint-main";
   });
 
   const res = await sdk.collection.getRoyaltyInformation({
-    collectionId: "although",
+    collectionId: "string",
   });
 
   if (res.statusCode == 200) {
