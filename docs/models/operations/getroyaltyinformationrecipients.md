@@ -1,4 +1,4 @@
-# GetRoyaltyInformation200ApplicationJSONRecipients
+# GetRoyaltyInformationRecipients
 
 
 ## Fields

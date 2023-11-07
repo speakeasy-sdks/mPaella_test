@@ -9,7 +9,7 @@ import { Expose, Type } from "class-transformer";
 /**
  * Blockchain you would like to use for this collection
  */
-export enum CreateCollectionCustomRequestBodyChain {
+export enum Chain {
     Polygon = "polygon",
     Solana = "solana",
 }
@@ -17,7 +17,7 @@ export enum CreateCollectionCustomRequestBodyChain {
 /**
  * See https://docs.crossmint.com/docs/metadata for more info.
  */
-export class CreateCollectionCustomRequestBodyMetadata extends SpeakeasyBase {
+export class Metadata extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "description" })
     description?: string;
@@ -47,15 +47,15 @@ export class CreateCollectionCustomRequestBody extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "chain" })
-    chain?: CreateCollectionCustomRequestBodyChain;
+    chain?: Chain;
 
     /**
      * See https://docs.crossmint.com/docs/metadata for more info.
      */
     @SpeakeasyMetadata()
     @Expose({ name: "metadata" })
-    @Type(() => CreateCollectionCustomRequestBodyMetadata)
-    metadata: CreateCollectionCustomRequestBodyMetadata;
+    @Type(() => Metadata)
+    metadata: Metadata;
 
     /**
      * (Optional) Any URLs in the metadata object will be resolved and reuploaded to IPFS [Default: true]

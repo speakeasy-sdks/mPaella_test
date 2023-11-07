@@ -1,4 +1,4 @@
-# CreateCollectionRequestBodyChain
+# Chain
 
 Blockchain you would like to use for this collection
 

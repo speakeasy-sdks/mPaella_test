@@ -14,7 +14,7 @@ export class GetRoyaltyInformationRequest extends SpeakeasyBase {
     collectionId: string;
 }
 
-export class GetRoyaltyInformation200ApplicationJSONRecipients extends SpeakeasyBase {
+export class GetRoyaltyInformationRecipients extends SpeakeasyBase {
     /**
      * Recipient address. e.g., 0x71C...
      */
@@ -33,11 +33,11 @@ export class GetRoyaltyInformation200ApplicationJSONRecipients extends Speakeasy
 /**
  * Success.
  */
-export class GetRoyaltyInformation200ApplicationJSON extends SpeakeasyBase {
-    @SpeakeasyMetadata({ elemType: GetRoyaltyInformation200ApplicationJSONRecipients })
+export class GetRoyaltyInformationResponseBody extends SpeakeasyBase {
+    @SpeakeasyMetadata({ elemType: GetRoyaltyInformationRecipients })
     @Expose({ name: "recipients" })
-    @Type(() => GetRoyaltyInformation200ApplicationJSONRecipients)
-    recipients?: GetRoyaltyInformation200ApplicationJSONRecipients[];
+    @Type(() => GetRoyaltyInformationRecipients)
+    recipients?: GetRoyaltyInformationRecipients[];
 }
 
 export class GetRoyaltyInformationResponse extends SpeakeasyBase {
@@ -63,5 +63,5 @@ export class GetRoyaltyInformationResponse extends SpeakeasyBase {
      * Success.
      */
     @SpeakeasyMetadata()
-    getRoyaltyInformation200ApplicationJSONObject?: GetRoyaltyInformation200ApplicationJSON;
+    object?: GetRoyaltyInformationResponseBody;
 }

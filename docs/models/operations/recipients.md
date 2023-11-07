@@ -1,4 +1,4 @@
-# EditRoyaltyInformationRequestBodyRecipients
+# Recipients
 
 
 ## Fields

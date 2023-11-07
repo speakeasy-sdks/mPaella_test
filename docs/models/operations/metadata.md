@@ -1,4 +1,4 @@
-# CreateCollectionRequestBodyMetadata
+# Metadata
 
 See https://docs.crossmint.com/docs/metadata for more info.
 

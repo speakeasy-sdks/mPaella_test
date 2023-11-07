@@ -6,7 +6,7 @@ import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { AxiosResponse } from "axios";
 import { Expose, Type } from "class-transformer";
 
-export class EditRoyaltyInformationRequestBodyRecipients extends SpeakeasyBase {
+export class Recipients extends SpeakeasyBase {
     /**
      * Address where the payments will be received. Note: ENS addresses are not supported.
      */
@@ -26,10 +26,10 @@ export class EditRoyaltyInformationRequestBody extends SpeakeasyBase {
     /**
      * List of royalty recipients. Note: EVM collections support only a single recipient. Use a contract splitter as recipient in order to send payments to multiple addresses.
      */
-    @SpeakeasyMetadata({ elemType: EditRoyaltyInformationRequestBodyRecipients })
+    @SpeakeasyMetadata({ elemType: Recipients })
     @Expose({ name: "recipients" })
-    @Type(() => EditRoyaltyInformationRequestBodyRecipients)
-    recipients?: EditRoyaltyInformationRequestBodyRecipients[];
+    @Type(() => Recipients)
+    recipients?: Recipients[];
 }
 
 export class EditRoyaltyInformationRequest extends SpeakeasyBase {

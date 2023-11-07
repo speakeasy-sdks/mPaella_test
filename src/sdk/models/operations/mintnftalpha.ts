@@ -3,7 +3,7 @@
  */
 
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
-import * as shared from "../shared";
+import * as shared from "../../../sdk/models/shared";
 import { AxiosResponse } from "axios";
 import { Expose, Type } from "class-transformer";
 
@@ -41,7 +41,7 @@ export class MintNftAlphaRequest extends SpeakeasyBase {
     collectionId: string;
 }
 
-export class MintNftAlpha200ApplicationJSONOnchain extends SpeakeasyBase {
+export class Onchain extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "chain" })
     chain: string;
@@ -54,15 +54,15 @@ export class MintNftAlpha200ApplicationJSONOnchain extends SpeakeasyBase {
 /**
  * Success.
  */
-export class MintNftAlpha200ApplicationJSON extends SpeakeasyBase {
+export class MintNftAlphaResponseBody extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "id" })
     id?: string;
 
     @SpeakeasyMetadata()
     @Expose({ name: "onchain" })
-    @Type(() => MintNftAlpha200ApplicationJSONOnchain)
-    onchain?: MintNftAlpha200ApplicationJSONOnchain;
+    @Type(() => Onchain)
+    onchain?: Onchain;
 }
 
 export class MintNftAlphaResponse extends SpeakeasyBase {
@@ -94,5 +94,5 @@ export class MintNftAlphaResponse extends SpeakeasyBase {
      * Success.
      */
     @SpeakeasyMetadata()
-    mintNftAlpha200ApplicationJSONObject?: MintNftAlpha200ApplicationJSON;
+    object?: MintNftAlphaResponseBody;
 }

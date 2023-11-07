@@ -9,19 +9,19 @@ import { Expose, Type } from "class-transformer";
 /**
  * Display name of your attribute
  */
-export enum EditNftRequestBodyMetadataAttributesDisplayType {
+export enum DisplayType {
     BoostNumber = "boost_number",
     BoostPercentage = "boost_percentage",
     Number = "number",
 }
 
-export class EditNftRequestBodyMetadataAttributes extends SpeakeasyBase {
+export class Attributes extends SpeakeasyBase {
     /**
      * Display name of your attribute
      */
     @SpeakeasyMetadata()
     @Expose({ name: "display_type" })
-    displayType?: EditNftRequestBodyMetadataAttributesDisplayType;
+    displayType?: DisplayType;
 
     /**
      * The name of the trait
@@ -41,7 +41,7 @@ export class EditNftRequestBodyMetadataAttributes extends SpeakeasyBase {
 /**
  * See https://docs.crossmint.com/docs/metadata for more info.
  */
-export class EditNftRequestBodyMetadata extends SpeakeasyBase {
+export class EditNftMetadata extends SpeakeasyBase {
     /**
      * (Optional) [Polygon only] <br> The Mint API natively supports rich metadata within ERC 721 and ERC 1155, including audio, video and/or HTML. <br> Populate the animation_url field as per the OpenSea metadata spec: <br> https://docs.opensea.io/docs/metadata-standards#metadata-structure
      */
@@ -52,10 +52,10 @@ export class EditNftRequestBodyMetadata extends SpeakeasyBase {
     /**
      * (Optional) Add attributes to your NFT
      */
-    @SpeakeasyMetadata({ elemType: EditNftRequestBodyMetadataAttributes })
+    @SpeakeasyMetadata({ elemType: Attributes })
     @Expose({ name: "attributes" })
-    @Type(() => EditNftRequestBodyMetadataAttributes)
-    attributes?: EditNftRequestBodyMetadataAttributes[];
+    @Type(() => Attributes)
+    attributes?: Attributes[];
 
     /**
      * A quick and brief description of your NFT (Max length: 64)
@@ -85,8 +85,8 @@ export class EditNftRequestBody extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "metadata" })
-    @Type(() => EditNftRequestBodyMetadata)
-    metadata: EditNftRequestBodyMetadata;
+    @Type(() => EditNftMetadata)
+    metadata: EditNftMetadata;
 
     /**
      * (Optional) Any URLs in the metadata object will be resolved and reuploaded to IPFS [Default: true]

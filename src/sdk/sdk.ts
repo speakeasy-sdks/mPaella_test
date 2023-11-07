@@ -3,10 +3,10 @@
  */
 
 import * as utils from "../internal/utils";
+import * as shared from "../sdk/models/shared";
 import { Collection } from "./collection";
 import { Edit } from "./edit";
 import { Mint } from "./mint";
-import * as shared from "./models/shared";
 import axios from "axios";
 import { AxiosInstance } from "axios";
 
@@ -64,9 +64,9 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "1.0.0";
-    sdkVersion = "1.16.0";
-    genVersion = "2.171.0";
-    userAgent = "speakeasy-sdk/typescript 1.16.0 2.171.0 1.0.0 crossmint-main";
+    sdkVersion = "2.0.0";
+    genVersion = "2.181.1";
+    userAgent = "speakeasy-sdk/typescript 2.0.0 2.181.1 1.0.0 crossmint-main";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -78,8 +78,8 @@ export class SDKConfiguration {
  */
 export class CrossmintMain {
     public collection: Collection;
-    public edit: Edit;
     public mint: Mint;
+    public edit: Edit;
 
     private sdkConfiguration: SDKConfiguration;
 
@@ -109,7 +109,7 @@ export class CrossmintMain {
         });
 
         this.collection = new Collection(this.sdkConfiguration);
-        this.edit = new Edit(this.sdkConfiguration);
         this.mint = new Mint(this.sdkConfiguration);
+        this.edit = new Edit(this.sdkConfiguration);
     }
 }

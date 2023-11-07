@@ -1,4 +1,4 @@
-# EditNftRequestBodyMetadataAttributesDisplayType
+# DisplayType
 
 Display name of your attribute
 

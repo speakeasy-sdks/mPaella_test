@@ -1,5 +1,5 @@
 # Collection
-(*collection*)
+(*.collection*)
 
 ### Available Operations
 
@@ -32,6 +32,7 @@ import { CrossmintMain } from "crossmint-main";
     collectionId: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -59,7 +60,7 @@ Create a collection with a random UUID
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { CreateCollectionRequestBodyChain } from "crossmint-main/dist/sdk/models/operations";
+import { CreateCollectionChain } from "crossmint-main/dist/sdk/models/operations";
 
 (async() => {
   const sdk = new CrossmintMain({
@@ -72,6 +73,7 @@ import { CreateCollectionRequestBodyChain } from "crossmint-main/dist/sdk/models
   const res = await sdk.collection.createCollection({
     metadata: {},
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -100,7 +102,7 @@ Create a collection with a custom provided UUID
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { CreateCollectionCustomRequestBodyChain } from "crossmint-main/dist/sdk/models/operations";
+import { Chain } from "crossmint-main/dist/sdk/models/operations";
 
 (async() => {
   const sdk = new CrossmintMain({
@@ -116,6 +118,7 @@ import { CreateCollectionCustomRequestBodyChain } from "crossmint-main/dist/sdk/
     },
     collectionId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -156,6 +159,7 @@ import { CrossmintMain } from "crossmint-main";
   const res = await sdk.collection.disableRoyaltyInformation({
     collectionId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -205,6 +209,7 @@ import { CrossmintMain } from "crossmint-main";
     collectionId: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -245,6 +250,7 @@ import { CrossmintMain } from "crossmint-main";
     collectionId: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -282,6 +288,7 @@ import { CrossmintMain } from "crossmint-main";
   });
 
   const res = await sdk.collection.listCollections();
+
 
   if (res.statusCode == 200) {
     // handle response

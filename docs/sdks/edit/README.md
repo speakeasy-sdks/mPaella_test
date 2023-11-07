@@ -1,5 +1,5 @@
 # Edit
-(*edit*)
+(*.edit*)
 
 ### Available Operations
 
@@ -13,7 +13,7 @@ Edit a minted NFT's metadata on IPFS. <br> **This API is subject to change as it
 
 ```typescript
 import { CrossmintMain } from "crossmint-main";
-import { EditNftRequestBodyMetadataAttributesDisplayType } from "crossmint-main/dist/sdk/models/operations";
+import { DisplayType } from "crossmint-main/dist/sdk/models/operations";
 
 (async() => {
   const sdk = new CrossmintMain({
@@ -37,6 +37,7 @@ import { EditNftRequestBodyMetadataAttributesDisplayType } from "crossmint-main/
     collectionId: "string",
     id: "<ID>",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

@@ -1,5 +1,5 @@
 # Mint
-(*mint*)
+(*.mint*)
 
 ### Available Operations
 
@@ -32,6 +32,7 @@ import { CrossmintMain } from "crossmint-main";
     },
     collectionId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -75,6 +76,7 @@ import { CrossmintMain } from "crossmint-main";
     },
     collectionId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -120,6 +122,7 @@ import { CrossmintMain } from "crossmint-main";
     nftName: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -161,6 +164,7 @@ import { CrossmintMain } from "crossmint-main";
     id: "<ID>",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -201,6 +205,7 @@ import { CrossmintMain } from "crossmint-main";
     collectionId: "string",
     page: 8263.07,
   });
+
 
   if (res.statusCode == 200) {
     // handle response

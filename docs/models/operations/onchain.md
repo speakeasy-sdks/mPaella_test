@@ -1,4 +1,4 @@
-# MintNftAlpha200ApplicationJSONOnchain
+# Onchain
 
 
 ## Fields
