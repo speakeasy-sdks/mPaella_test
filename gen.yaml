@@ -2,19 +2,19 @@ configVersion: 1.0.0
 management:
   docChecksum: a994a6728252a95f7a47a8b8789dab90
   docVersion: 1.0.0
-  speakeasyVersion: 1.114.1
-  generationVersion: 2.181.1
+  speakeasyVersion: 1.116.0
+  generationVersion: 2.185.0
 generation:
   comments: {}
   sdkClassName: crossmint-main
   repoURL: https://github.com/speakeasy-sdks/mPaella_test.git
 features:
   typescript:
-    core: 3.1.0
+    core: 3.1.2
     globalSecurity: 2.82.0
     globalServerURLs: 2.82.0
 typescript:
-  version: 2.0.0
+  version: 2.0.1
   author: maxwell
   clientServerStatusCodesAsErrors: false
   flattenGlobalSecurity: false
@@ -26,7 +26,9 @@ typescript:
       operations: sdk/models/operations
       shared: sdk/models/shared
       webhooks: sdk/models/webhooks
+  inputModelSuffix: input
   installationURL: https://github.com/speakeasy-sdks/mPaella_test
   maxMethodParams: 0
+  outputModelSuffix: output
   packageName: crossmint-main
   repoSubDirectory: .

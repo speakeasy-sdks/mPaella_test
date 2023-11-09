@@ -34,7 +34,7 @@ export class Collection {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/2022-06-09/collections/{collectionId}",
             req
@@ -55,7 +55,7 @@ export class Collection {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -99,7 +99,7 @@ export class Collection {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/2022-06-09/collections/";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/2022-06-09/collections/";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -130,7 +130,7 @@ export class Collection {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -175,7 +175,7 @@ export class Collection {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/2022-06-09/collections/{collectionId}",
             req
@@ -210,7 +210,7 @@ export class Collection {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "put",
             headers: headers,
             responseType: "arraybuffer",
@@ -256,7 +256,7 @@ export class Collection {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/v1-alpha1/minting/collections/{collectionId}/royalties",
             req
@@ -277,7 +277,7 @@ export class Collection {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "delete",
             headers: headers,
             responseType: "arraybuffer",
@@ -322,7 +322,7 @@ export class Collection {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/v1-alpha1/minting/collections/{collectionId}/royalties",
             req
@@ -357,7 +357,7 @@ export class Collection {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "put",
             headers: headers,
             responseType: "arraybuffer",
@@ -403,7 +403,7 @@ export class Collection {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = utils.generateURL(
+        const operationUrl: string = utils.generateURL(
             baseURL,
             "/v1-alpha1/minting/collections/{collectionId}/royalties",
             req
@@ -424,7 +424,7 @@ export class Collection {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",
@@ -480,7 +480,7 @@ export class Collection {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/2022-06-09/collections/";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/2022-06-09/collections/";
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
         let globalSecurity = this.sdkConfiguration.security;
         if (typeof globalSecurity === "function") {
@@ -497,7 +497,7 @@ export class Collection {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "get",
             headers: headers,
             responseType: "arraybuffer",

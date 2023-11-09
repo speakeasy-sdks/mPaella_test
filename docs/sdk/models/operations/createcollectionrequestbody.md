@@ -1,9 +1,10 @@
-# EditNftRequestBody
+# CreateCollectionRequestBody
 
 
 ## Fields
 
 | Field                                                                                              | Type                                                                                               | Required                                                                                           | Description                                                                                        |
 | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `metadata`                                                                                         | [operations.EditNftMetadata](../../models/operations/editnftmetadata.md)                           | :heavy_check_mark:                                                                                 | See https://docs.crossmint.com/docs/metadata for more info.                                        |
+| `chain`                                                                                            | [operations.CreateCollectionChain](../../../sdk/models/operations/createcollectionchain.md)        | :heavy_minus_sign:                                                                                 | Blockchain you would like to use for this collection                                               |
+| `metadata`                                                                                         | [operations.CreateCollectionMetadata](../../../sdk/models/operations/createcollectionmetadata.md)  | :heavy_check_mark:                                                                                 | See https://docs.crossmint.com/docs/metadata for more info.                                        |
 | `reuploadLinkedFiles`                                                                              | *boolean*                                                                                          | :heavy_minus_sign:                                                                                 | (Optional) Any URLs in the metadata object will be resolved and reuploaded to IPFS [Default: true] |

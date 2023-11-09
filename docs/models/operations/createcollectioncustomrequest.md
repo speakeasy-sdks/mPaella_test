@@ -1,9 +1,0 @@
-# CreateCollectionCustomRequest
-
-
-## Fields
-
-| Field                                                                                                        | Type                                                                                                         | Required                                                                                                     | Description                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
-| `requestBody`                                                                                                | [operations.CreateCollectionCustomRequestBody](../../models/operations/createcollectioncustomrequestbody.md) | :heavy_minus_sign:                                                                                           | N/A                                                                                                          |
-| `collectionId`                                                                                               | *string*                                                                                                     | :heavy_check_mark:                                                                                           | The ID of the named collection, which you will use to create new NFTs and get status                         |

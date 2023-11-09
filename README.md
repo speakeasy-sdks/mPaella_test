@@ -45,7 +45,7 @@ import { CrossmintMain } from "crossmint-main";
 ## Available Resources and Operations
 
 
-### [.collection](docs/sdks/collection/README.md)
+### [collection](docs/sdks/collection/README.md)
 
 * [collectionInfo](docs/sdks/collection/README.md#collectioninfo) - Collection information
 * [createCollection](docs/sdks/collection/README.md#createcollection) - Create collection
@@ -55,7 +55,7 @@ import { CrossmintMain } from "crossmint-main";
 * [getRoyaltyInformation](docs/sdks/collection/README.md#getroyaltyinformation) - Fetch royalty configuration
 * [listCollections](docs/sdks/collection/README.md#listcollections) - List all collections
 
-### [.mint](docs/sdks/mint/README.md)
+### [mint](docs/sdks/mint/README.md)
 
 * [mintNft](docs/sdks/mint/README.md#mintnft) - Mint an NFT
 * [mintNftAlpha](docs/sdks/mint/README.md#mintnftalpha) - Mint an NFT - Compressed
@@ -63,7 +63,7 @@ import { CrossmintMain } from "crossmint-main";
 * [mintStatus](docs/sdks/mint/README.md#mintstatus) - Mint Status
 * [mintStatusList](docs/sdks/mint/README.md#mintstatuslist) - Mint Status List
 
-### [.edit](docs/sdks/edit/README.md)
+### [edit](docs/sdks/edit/README.md)
 
 * [editNft](docs/sdks/edit/README.md#editnft) - Edit NFT
 <!-- End SDK Available Operations -->
@@ -91,9 +91,39 @@ Here's an example of one such pagination call:
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 
+## Example
+
+```typescript
+import { CrossmintMain } from "crossmint-main";
+
+(async () => {
+    const sdk = new CrossmintMain({
+        security: {
+            clientSecret: "",
+            projectId: "",
+        },
+    });
+
+    let res;
+    try {
+        res = await sdk.collection.collectionInfo({
+            collectionId: "string",
+        });
+    } catch (e) {}
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+})();
+
+```
 <!-- End Error Handling -->
 
 
@@ -188,19 +218,16 @@ const httpClient = axios.create({
 
 const sdk = new CrossmintMain({defaultClient: httpClient});
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 
 
 <!-- Start Authentication -->
-
 # Authentication
 
 ## Per-Client Security Schemes
 
-Your SDK supports the following security schemes globally:
+This SDK supports the following security schemes globally:
 
 | Name           | Type           | Scheme         |
 | -------------- | -------------- | -------------- |

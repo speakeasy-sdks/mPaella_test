@@ -1,5 +1,5 @@
 # Edit
-(*.edit*)
+(*edit*)
 
 ### Available Operations
 
@@ -38,7 +38,6 @@ import { DisplayType } from "crossmint-main/dist/sdk/models/operations";
     id: "<ID>",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -47,13 +46,17 @@ import { DisplayType } from "crossmint-main/dist/sdk/models/operations";
 
 ### Parameters
 
-| Parameter                                                              | Type                                                                   | Required                                                               | Description                                                            |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| `request`                                                              | [operations.EditNftRequest](../../models/operations/editnftrequest.md) | :heavy_check_mark:                                                     | The request object to use for the request.                             |
-| `config`                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)           | :heavy_minus_sign:                                                     | Available config options for making requests.                          |
+| Parameter                                                                  | Type                                                                       | Required                                                                   | Description                                                                |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| `request`                                                                  | [operations.EditNftRequest](../../sdk/models/operations/editnftrequest.md) | :heavy_check_mark:                                                         | The request object to use for the request.                                 |
+| `config`                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)               | :heavy_minus_sign:                                                         | Available config options for making requests.                              |
 
 
 ### Response
 
-**Promise<[operations.EditNftResponse](../../models/operations/editnftresponse.md)>**
+**Promise<[operations.EditNftResponse](../../sdk/models/operations/editnftresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |

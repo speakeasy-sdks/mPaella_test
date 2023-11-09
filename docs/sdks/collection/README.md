@@ -1,5 +1,5 @@
 # Collection
-(*.collection*)
+(*collection*)
 
 ### Available Operations
 
@@ -32,7 +32,6 @@ import { CrossmintMain } from "crossmint-main";
     collectionId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -41,16 +40,20 @@ import { CrossmintMain } from "crossmint-main";
 
 ### Parameters
 
-| Parameter                                                                            | Type                                                                                 | Required                                                                             | Description                                                                          |
-| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
-| `request`                                                                            | [operations.CollectionInfoRequest](../../models/operations/collectioninforequest.md) | :heavy_check_mark:                                                                   | The request object to use for the request.                                           |
-| `config`                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                         | :heavy_minus_sign:                                                                   | Available config options for making requests.                                        |
+| Parameter                                                                                | Type                                                                                     | Required                                                                                 | Description                                                                              |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| `request`                                                                                | [operations.CollectionInfoRequest](../../sdk/models/operations/collectioninforequest.md) | :heavy_check_mark:                                                                       | The request object to use for the request.                                               |
+| `config`                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                             | :heavy_minus_sign:                                                                       | Available config options for making requests.                                            |
 
 
 ### Response
 
-**Promise<[operations.CollectionInfoResponse](../../models/operations/collectioninforesponse.md)>**
+**Promise<[operations.CollectionInfoResponse](../../sdk/models/operations/collectioninforesponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## createCollection
 
@@ -74,7 +77,6 @@ import { CreateCollectionChain } from "crossmint-main/dist/sdk/models/operations
     metadata: {},
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -83,16 +85,20 @@ import { CreateCollectionChain } from "crossmint-main/dist/sdk/models/operations
 
 ### Parameters
 
-| Parameter                                                                                        | Type                                                                                             | Required                                                                                         | Description                                                                                      |
-| ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| `request`                                                                                        | [operations.CreateCollectionRequestBody](../../models/operations/createcollectionrequestbody.md) | :heavy_check_mark:                                                                               | The request object to use for the request.                                                       |
-| `config`                                                                                         | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                     | :heavy_minus_sign:                                                                               | Available config options for making requests.                                                    |
+| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
+| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| `request`                                                                                            | [operations.CreateCollectionRequestBody](../../sdk/models/operations/createcollectionrequestbody.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
+| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
 
 
 ### Response
 
-**Promise<[operations.CreateCollectionResponse](../../models/operations/createcollectionresponse.md)>**
+**Promise<[operations.CreateCollectionResponse](../../sdk/models/operations/createcollectionresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## createCollectionCustom
 
@@ -119,7 +125,6 @@ import { Chain } from "crossmint-main/dist/sdk/models/operations";
     collectionId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -128,16 +133,20 @@ import { Chain } from "crossmint-main/dist/sdk/models/operations";
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `request`                                                                                            | [operations.CreateCollectionCustomRequest](../../models/operations/createcollectioncustomrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                                                                | Type                                                                                                     | Required                                                                                                 | Description                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                | [operations.CreateCollectionCustomRequest](../../sdk/models/operations/createcollectioncustomrequest.md) | :heavy_check_mark:                                                                                       | The request object to use for the request.                                                               |
+| `config`                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                             | :heavy_minus_sign:                                                                                       | Available config options for making requests.                                                            |
 
 
 ### Response
 
-**Promise<[operations.CreateCollectionCustomResponse](../../models/operations/createcollectioncustomresponse.md)>**
+**Promise<[operations.CreateCollectionCustomResponse](../../sdk/models/operations/createcollectioncustomresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## disableRoyaltyInformation
 
@@ -160,7 +169,6 @@ import { CrossmintMain } from "crossmint-main";
     collectionId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -169,16 +177,20 @@ import { CrossmintMain } from "crossmint-main";
 
 ### Parameters
 
-| Parameter                                                                                                  | Type                                                                                                       | Required                                                                                                   | Description                                                                                                |
-| ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| `request`                                                                                                  | [operations.DisableRoyaltyInformationRequest](../../models/operations/disableroyaltyinformationrequest.md) | :heavy_check_mark:                                                                                         | The request object to use for the request.                                                                 |
-| `config`                                                                                                   | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                               | :heavy_minus_sign:                                                                                         | Available config options for making requests.                                                              |
+| Parameter                                                                                                      | Type                                                                                                           | Required                                                                                                       | Description                                                                                                    |
+| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                      | [operations.DisableRoyaltyInformationRequest](../../sdk/models/operations/disableroyaltyinformationrequest.md) | :heavy_check_mark:                                                                                             | The request object to use for the request.                                                                     |
+| `config`                                                                                                       | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                                   | :heavy_minus_sign:                                                                                             | Available config options for making requests.                                                                  |
 
 
 ### Response
 
-**Promise<[operations.DisableRoyaltyInformationResponse](../../models/operations/disableroyaltyinformationresponse.md)>**
+**Promise<[operations.DisableRoyaltyInformationResponse](../../sdk/models/operations/disableroyaltyinformationresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## editRoyaltyInformation
 
@@ -209,7 +221,6 @@ import { CrossmintMain } from "crossmint-main";
     collectionId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -218,16 +229,20 @@ import { CrossmintMain } from "crossmint-main";
 
 ### Parameters
 
-| Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
-| ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `request`                                                                                            | [operations.EditRoyaltyInformationRequest](../../models/operations/editroyaltyinformationrequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
-| `config`                                                                                             | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                         | :heavy_minus_sign:                                                                                   | Available config options for making requests.                                                        |
+| Parameter                                                                                                | Type                                                                                                     | Required                                                                                                 | Description                                                                                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                | [operations.EditRoyaltyInformationRequest](../../sdk/models/operations/editroyaltyinformationrequest.md) | :heavy_check_mark:                                                                                       | The request object to use for the request.                                                               |
+| `config`                                                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                             | :heavy_minus_sign:                                                                                       | Available config options for making requests.                                                            |
 
 
 ### Response
 
-**Promise<[operations.EditRoyaltyInformationResponse](../../models/operations/editroyaltyinformationresponse.md)>**
+**Promise<[operations.EditRoyaltyInformationResponse](../../sdk/models/operations/editroyaltyinformationresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getRoyaltyInformation
 
@@ -250,7 +265,6 @@ import { CrossmintMain } from "crossmint-main";
     collectionId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -259,16 +273,20 @@ import { CrossmintMain } from "crossmint-main";
 
 ### Parameters
 
-| Parameter                                                                                          | Type                                                                                               | Required                                                                                           | Description                                                                                        |
-| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `request`                                                                                          | [operations.GetRoyaltyInformationRequest](../../models/operations/getroyaltyinformationrequest.md) | :heavy_check_mark:                                                                                 | The request object to use for the request.                                                         |
-| `config`                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                       | :heavy_minus_sign:                                                                                 | Available config options for making requests.                                                      |
+| Parameter                                                                                              | Type                                                                                                   | Required                                                                                               | Description                                                                                            |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                              | [operations.GetRoyaltyInformationRequest](../../sdk/models/operations/getroyaltyinformationrequest.md) | :heavy_check_mark:                                                                                     | The request object to use for the request.                                                             |
+| `config`                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                           | :heavy_minus_sign:                                                                                     | Available config options for making requests.                                                          |
 
 
 ### Response
 
-**Promise<[operations.GetRoyaltyInformationResponse](../../models/operations/getroyaltyinformationresponse.md)>**
+**Promise<[operations.GetRoyaltyInformationResponse](../../sdk/models/operations/getroyaltyinformationresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## listCollections
 
@@ -289,7 +307,6 @@ import { CrossmintMain } from "crossmint-main";
 
   const res = await sdk.collection.listCollections();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -305,5 +322,9 @@ import { CrossmintMain } from "crossmint-main";
 
 ### Response
 
-**Promise<[operations.ListCollectionsResponse](../../models/operations/listcollectionsresponse.md)>**
+**Promise<[operations.ListCollectionsResponse](../../sdk/models/operations/listcollectionsresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
