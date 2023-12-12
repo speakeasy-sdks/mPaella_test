@@ -15,11 +15,11 @@ Edit a minted NFT's metadata on IPFS. <br> **This API is subject to change as it
 import { CrossmintMain } from "crossmint-main";
 import { DisplayType } from "crossmint-main/dist/sdk/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -41,7 +41,9 @@ import { DisplayType } from "crossmint-main/dist/sdk/models/operations";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

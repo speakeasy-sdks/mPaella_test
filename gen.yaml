@@ -2,8 +2,8 @@ configVersion: 1.0.0
 management:
   docChecksum: a994a6728252a95f7a47a8b8789dab90
   docVersion: 1.0.0
-  speakeasyVersion: 1.121.1
-  generationVersion: 2.194.1
+  speakeasyVersion: 1.126.0
+  generationVersion: 2.213.3
 generation:
   comments: {}
   sdkClassName: crossmint-main
@@ -12,11 +12,11 @@ generation:
     optionalPropertyRendering: withExample
 features:
   typescript:
-    core: 3.1.4
-    globalSecurity: 2.82.0
+    core: 3.3.0
+    globalSecurity: 2.82.1
     globalServerURLs: 2.82.1
 typescript:
-  version: 2.0.4
+  version: 2.1.0
   author: maxwell
   clientServerStatusCodesAsErrors: false
   flattenGlobalSecurity: false
@@ -34,3 +34,4 @@ typescript:
   outputModelSuffix: output
   packageName: crossmint-main
   repoSubDirectory: .
+  templateVersion: v1

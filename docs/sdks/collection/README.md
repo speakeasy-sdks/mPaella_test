@@ -20,11 +20,11 @@ Get information about a specific collection
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -35,7 +35,9 @@ import { CrossmintMain } from "crossmint-main";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -65,11 +67,11 @@ Create a collection with a random UUID
 import { CrossmintMain } from "crossmint-main";
 import { CreateCollectionChain } from "crossmint-main/dist/sdk/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -80,7 +82,9 @@ import { CreateCollectionChain } from "crossmint-main/dist/sdk/models/operations
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -110,11 +114,11 @@ Create a collection with a custom provided UUID
 import { CrossmintMain } from "crossmint-main";
 import { Chain } from "crossmint-main/dist/sdk/models/operations";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -128,7 +132,9 @@ import { Chain } from "crossmint-main/dist/sdk/models/operations";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -157,11 +163,11 @@ Remove all royalties from a given collection. No new NFT sales will yield royalt
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -172,7 +178,9 @@ import { CrossmintMain } from "crossmint-main";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -201,11 +209,11 @@ Configure royalties for all NFTs in a collection.
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -224,7 +232,9 @@ import { CrossmintMain } from "crossmint-main";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -253,11 +263,11 @@ Fetch the royalty config for a collection, from its current state in the blockch
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -268,7 +278,9 @@ import { CrossmintMain } from "crossmint-main";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -297,11 +309,11 @@ List all of your collections on Crossmint
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -310,7 +322,9 @@ import { CrossmintMain } from "crossmint-main";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

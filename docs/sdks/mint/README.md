@@ -18,11 +18,11 @@ Mint your NFTs and deliver them either to a web3 wallet or to a web2 email addre
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -36,7 +36,9 @@ import { CrossmintMain } from "crossmint-main";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -65,11 +67,11 @@ This will mint your NFT with compression on Solana.
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -83,7 +85,9 @@ import { CrossmintMain } from "crossmint-main";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -112,11 +116,11 @@ This pathway allows you to mint NFTs and  guarantee idempotency
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -131,7 +135,9 @@ import { CrossmintMain } from "crossmint-main";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -160,11 +166,11 @@ Get the status and associated information for a mint operation
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -176,7 +182,9 @@ import { CrossmintMain } from "crossmint-main";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -205,11 +213,11 @@ Get a list of status and associated information for all mint operations in a giv
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async() => {
+async function run() {
   const sdk = new CrossmintMain({
     security: {
-      clientSecret: "",
-      projectId: "",
+      clientSecret: "<YOUR_API_KEY_HERE>",
+      projectId: "<YOUR_API_KEY_HERE>",
     },
   });
 
@@ -221,7 +229,9 @@ import { CrossmintMain } from "crossmint-main";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

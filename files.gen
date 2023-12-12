@@ -39,7 +39,6 @@ src/sdk/models/shared/security.ts
 src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/shared/index.ts
-USAGE.md
 docs/sdk/models/operations/collectioninforequest.md
 docs/sdk/models/operations/collectioninforesponse.md
 docs/sdk/models/operations/createcollectionchain.md
@@ -89,4 +88,5 @@ docs/sdks/crossmintmain/README.md
 docs/sdks/collection/README.md
 docs/sdks/mint/README.md
 docs/sdks/edit/README.md
+USAGE.md
 .gitattributes

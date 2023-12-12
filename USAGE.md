@@ -1,12 +1,12 @@
-<!-- Start SDK Example Usage -->
+<!-- Start SDK Example Usage [usage] -->
 ```typescript
 import { CrossmintMain } from "crossmint-main";
 
-(async () => {
+async function run() {
     const sdk = new CrossmintMain({
         security: {
-            clientSecret: "",
-            projectId: "",
+            clientSecret: "<YOUR_API_KEY_HERE>",
+            projectId: "<YOUR_API_KEY_HERE>",
         },
     });
 
@@ -17,7 +17,9 @@ import { CrossmintMain } from "crossmint-main";
     if (res.statusCode == 200) {
         // handle response
     }
-})();
+}
+
+run();
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->
