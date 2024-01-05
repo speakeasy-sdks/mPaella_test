@@ -20,18 +20,18 @@ export enum Chain {
 export class Metadata extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "description" })
-    description?: string;
+    description: string;
 
     @SpeakeasyMetadata()
     @Expose({ name: "imageUrl" })
-    imageUrl?: string;
+    imageUrl: string;
 
     /**
      * Collection name (Max length: 32)
      */
     @SpeakeasyMetadata()
     @Expose({ name: "name" })
-    name?: string;
+    name: string;
 
     /**
      * NFT collection symbol (Polygon ONLY)
@@ -47,7 +47,7 @@ export class CreateCollectionCustomRequestBody extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "chain" })
-    chain?: Chain;
+    chain: Chain;
 
     /**
      * See https://docs.crossmint.com/docs/metadata for more info.

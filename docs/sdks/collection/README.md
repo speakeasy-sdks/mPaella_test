@@ -76,7 +76,12 @@ async function run() {
   });
 
   const res = await sdk.collection.createCollection({
-    metadata: {},
+    chain: CreateCollectionChain.Solana,
+    metadata: {
+      description: "Stand-alone background structure",
+      imageUrl: "string",
+      name: "string",
+    },
   });
 
   if (res.statusCode == 200) {
@@ -124,7 +129,12 @@ async function run() {
 
   const res = await sdk.collection.createCollectionCustom({
     requestBody: {
-      metadata: {},
+      chain: Chain.Polygon,
+      metadata: {
+        description: "Business-focused asymmetric Graphical User Interface",
+        imageUrl: "string",
+        name: "string",
+      },
     },
     collectionId: "string",
   });

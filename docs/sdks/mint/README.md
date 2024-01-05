@@ -29,6 +29,7 @@ async function run() {
   const res = await sdk.mint.mintNft({
     requestBody: {
       metadata: "string",
+      recipient: "string",
     },
     collectionId: "string",
   });
@@ -78,6 +79,7 @@ async function run() {
   const res = await sdk.mint.mintNftAlpha({
     requestBody: {
       metadata: "string",
+      recipient: "string",
     },
     collectionId: "string",
   });
@@ -127,6 +129,7 @@ async function run() {
   const res = await sdk.mint.mintNftIdempotentAlpha({
     requestBody: {
       metadata: "string",
+      recipient: "string",
     },
     collectionId: "string",
     nftName: "string",

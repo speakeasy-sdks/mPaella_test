@@ -20,7 +20,7 @@ export class MintNftRequestBody extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "recipient" })
-    recipient?: string;
+    recipient: string;
 
     /**
      * (Optional) Any URLs in the metadata object will be resolved and reuploaded to IPFS [Default: true]
