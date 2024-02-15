@@ -28,10 +28,10 @@ async function run() {
 
   const res = await sdk.mint.mintNft({
     requestBody: {
-      metadata: "string",
-      recipient: "string",
+      metadata: "<value>",
+      recipient: "<value>",
     },
-    collectionId: "string",
+    collectionId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -78,10 +78,10 @@ async function run() {
 
   const res = await sdk.mint.mintNftAlpha({
     requestBody: {
-      metadata: "string",
-      recipient: "string",
+      metadata: "<value>",
+      recipient: "<value>",
     },
-    collectionId: "string",
+    collectionId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -128,11 +128,11 @@ async function run() {
 
   const res = await sdk.mint.mintNftIdempotentAlpha({
     requestBody: {
-      metadata: "string",
-      recipient: "string",
+      metadata: "<value>",
+      recipient: "<value>",
     },
-    collectionId: "string",
-    nftName: "string",
+    collectionId: "<value>",
+    nftName: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -178,8 +178,8 @@ async function run() {
   });
 
   const res = await sdk.mint.mintStatus({
-    collectionId: "string",
-    id: "<ID>",
+    collectionId: "<value>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {
@@ -225,7 +225,7 @@ async function run() {
   });
 
   const res = await sdk.mint.mintStatusList({
-    collectionId: "string",
+    collectionId: "<value>",
     page: 8263.07,
   });
 

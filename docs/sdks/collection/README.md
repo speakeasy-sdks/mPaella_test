@@ -29,7 +29,7 @@ async function run() {
   });
 
   const res = await sdk.collection.collectionInfo({
-    collectionId: "string",
+    collectionId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -79,8 +79,8 @@ async function run() {
     chain: CreateCollectionChain.Solana,
     metadata: {
       description: "Stand-alone background structure",
-      imageUrl: "string",
-      name: "string",
+      imageUrl: "<value>",
+      name: "<value>",
     },
   });
 
@@ -132,11 +132,11 @@ async function run() {
       chain: Chain.Polygon,
       metadata: {
         description: "Business-focused asymmetric Graphical User Interface",
-        imageUrl: "string",
-        name: "string",
+        imageUrl: "<value>",
+        name: "<value>",
       },
     },
-    collectionId: "string",
+    collectionId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -182,7 +182,7 @@ async function run() {
   });
 
   const res = await sdk.collection.disableRoyaltyInformation({
-    collectionId: "string",
+    collectionId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -236,7 +236,7 @@ async function run() {
         },
       ],
     },
-    collectionId: "string",
+    collectionId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -282,7 +282,7 @@ async function run() {
   });
 
   const res = await sdk.collection.getRoyaltyInformation({
-    collectionId: "string",
+    collectionId: "<value>",
   });
 
   if (res.statusCode == 200) {

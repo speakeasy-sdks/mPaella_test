@@ -11,7 +11,7 @@ async function run() {
     });
 
     const res = await sdk.collection.collectionInfo({
-        collectionId: "string",
+        collectionId: "<value>",
     });
 
     if (res.statusCode == 200) {

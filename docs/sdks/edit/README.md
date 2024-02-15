@@ -28,17 +28,17 @@ async function run() {
       metadata: {
         attributes: [
           {
-            traitType: "string",
-            value: "string",
+            traitType: "<value>",
+            value: "<value>",
           },
         ],
         description: "Up-sized regional hardware",
         image: "https://loremflickr.com/640/480",
-        name: "string",
+        name: "<value>",
       },
     },
-    collectionId: "string",
-    id: "<ID>",
+    collectionId: "<value>",
+    id: "<id>",
   });
 
   if (res.statusCode == 200) {

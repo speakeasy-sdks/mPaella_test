@@ -4,15 +4,15 @@ management:
   docChecksum: a994a6728252a95f7a47a8b8789dab90
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 2.1.1
-  configChecksum: a6aee9c5084ca635abda9f534d691c6d
+  generationVersion: 2.258.2
+  releaseVersion: 2.1.2
+  configChecksum: d8c57edffaeaf41f7bb02ef4be753a67
   repoURL: https://github.com/speakeasy-sdks/mPaella_test.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/mPaella_test
 features:
   typescript:
-    core: 3.4.1
+    core: 3.4.7
     globalSecurity: 2.82.2
     globalServerURLs: 2.82.1
 generatedFiles:
