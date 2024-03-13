@@ -64,9 +64,9 @@ export class SDKConfiguration {
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "1.0.0";
-    sdkVersion = "2.1.2";
-    genVersion = "2.258.2";
-    userAgent = "speakeasy-sdk/typescript 2.1.2 2.258.2 1.0.0 crossmint-main";
+    sdkVersion = "2.1.3";
+    genVersion = "2.280.6";
+    userAgent = "speakeasy-sdk/typescript 2.1.3 2.280.6 1.0.0 crossmint-main";
     retryConfig?: utils.RetryConfig;
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -92,9 +92,12 @@ export class CrossmintMain {
                 env: props?.env?.toString() ?? "staging",
             },
         ];
-        const serverIdx = props?.serverIdx ?? 0;
 
         if (!serverURL) {
+            const serverIdx = props?.serverIdx ?? 0;
+            if (serverIdx < 0 || serverIdx >= ServerList.length) {
+                throw new Error(`Invalid server index ${serverIdx}`);
+            }
             serverURL = ServerList[serverIdx];
             defaults = serverDefaults[serverIdx];
         }

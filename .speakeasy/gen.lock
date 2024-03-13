@@ -3,18 +3,18 @@ id: 28ffc8f5-809c-432e-8ad9-2b06d91d28aa
 management:
   docChecksum: a994a6728252a95f7a47a8b8789dab90
   docVersion: 1.0.0
-  speakeasyVersion: internal
-  generationVersion: 2.258.2
-  releaseVersion: 2.1.2
-  configChecksum: d8c57edffaeaf41f7bb02ef4be753a67
+  speakeasyVersion: 1.207.1
+  generationVersion: 2.280.6
+  releaseVersion: 2.1.3
+  configChecksum: 8872483044e8460582ea3a3ad26432a2
   repoURL: https://github.com/speakeasy-sdks/mPaella_test.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/mPaella_test
 features:
   typescript:
-    core: 3.4.7
-    globalSecurity: 2.82.2
-    globalServerURLs: 2.82.1
+    core: 3.4.8
+    globalSecurity: 2.82.4
+    globalServerURLs: 2.82.2
 generatedFiles:
   - src/sdk/collection.ts
   - src/sdk/mint.ts
